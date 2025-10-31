@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello from CI/CD Pipeline!!!');
+  res.send('Hello from CI/CD Pipeline!');
 });
 
 const PORT = process.env.PORT || 3000;
@@ -10,7 +10,5 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 module.exports = app;
 
-// testing github actions
 
-// trigger ci/cd
-// trigger action
+
